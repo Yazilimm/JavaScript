@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  </head>
+  <body>
+        <div class="container">
+          <div class="row">
+            <form>
+                <div class="form-group">
+                    <label for="adi">Adiniz</label>
+                    <input id="adi" name="adi" type="text" class="form-control">
+                    <small class="text-muted text-danger form-text">Adinizi Girmediniz</small>
+                </div>
+                <div class="form-group">
+                    <label for="soyadi"> SoyAdiniz</label>
+                    <input id="soyadi" name="soyadi" type="text" class="form-control">
+                    <small class="text-muted text-danger form-text">Soyadinizi Girmediniz</small>
+                </div>
+                <input type="text" id="adi" name="adi">
+                <input type="text" id="soyadi" name="soyadi">
+                <button class="btn btn-primary"type="submit" id="gonder" name="gonder" onclick="online_register()"> Kayit Ol</button> 
+            </form>
+          </div>
+        </div>    
+    <script>
+      function online_register(){
+            var adiJquery=$("#adi").val();
+            var soyadiJquery=$("#soyadi").val();
+            if($("adi").val()!=null && $("soyadi").val()!=null){
+                alert("adim: "+adiJquery + "soyadim: " + soyadiJquery)
+            }
+            
+
+        }
+
+        
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

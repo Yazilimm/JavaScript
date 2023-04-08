@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="m-5" id="div-id">
+        <p id="paragraf-id">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, fugiat?</p>
+        <button class="btn btn-primary mt-5 "type="show" id="show" name="show" > Show</button>  
+        <button class="btn btn-primary mt-5 "type="hide" id="hide" name="hide" > Hide</button>  
+        <button class="btn btn-primary mt-5 "type="fade" id="fade-in" name="fade-in" > FadeIn</button>  
+        <button class="btn btn-primary mt-5 "type="fade" id="fade-out" name="fade-out" > FadeOut</button>  
+        <button class="btn btn-primary mt-5 "type="fade" id="fade-toggle" name="fade-toggle"> FadeToggle</button>  
+        <button class="btn btn-primary mt-5 "type="fade" id="fade-to" name="fade-to" > FadeTo</button>  
+        <button class="btn btn-primary mt-5 "type="slide" id="slide" name="slide" > Slide</button>  
+        <button class="btn btn-primary mt-5 "type="animate" id="animate" name="animate" > Animate</button>   
+        <button class="btn btn-primary mt-5 "type="stop" id="stop" name="stop" > stop</button>  
+    </div>
+
+   
+    <script>
+      
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("#paragraf-id").hide("fast",function(){alert("gizlendi")});
+            });
+            
+        });
+      
+      
+        $(document).ready(function(){
+            $("#show").click(function(){
+                $("#paragraf-id").show("fast",function(){alert("aciga cikti")});
+            });
+            
+        });
+    </script>
+    
+    <script>  
+        $(document).ready(function(){
+            $("#fade-in").click(function(){
+                $("#paragraf-id").fadeIn("slow",function(){alert("fade-in")});
+            });
+            
+        })
+      
+      
+        $(document).ready(function(){
+            $("#fade-out").click(function(){
+                $("#paragraf-id").fadeOut("slow",function(){alert("fade-out")});
+            });
+            
+        })
+      
+      
+        $(document).ready(function(){
+            $("#fade-toggle").click(function(){
+                $("#paragraf-id").fadetoggle("slow",function(){alert("fade-toggle")});
+            });
+           
+        })
+      
+      
+        $(document).ready(function(){
+            $("#fade-to").click(function(){
+                $("#paragraf-id").fadeTo("slow",function(){alert("fade-to")});
+            });
+           
+        })
+        
+    </script>
+    
+    <scrip src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></scrip>
+    <scrip src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></scrip>
+  </body>
+</html>

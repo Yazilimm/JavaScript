@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasicSelectors</title>
+    <style>
+        
+        /*Tum H1 leri sec
+        h1{color:red; background:black;}
+        p{color:red; background:black;}
+        */
+
+        /* H1 ve P beraber secme
+        h1,p{color:red; background:black;}
+        */
+
+        /* Id ile secme
+        #logo{background:black;color:red;}
+        */
+
+        /* Class ile secme
+        .info {color:red; background:black;}
+        */
+
+        /* Id ve Class beraber secme
+        #logo,.info{color:red; background:black;}
+        */ 
+        /* Paragrafin Id ve Class varsa 
+        #para1.lead{color:red; background:black;}
+        */
+
+        /* linklerin altindaki cizgileri kaldirma
+        a{text-decoration: none;}
+        */
+
+        /*Hiyerarsik Secim
+        ul li a{text-decoration: none;}
+        .info span{color:red;}
+        .info .primary{color:red;}
+        */
+
+        /* Tum elemanleri secme
+        *{font-size: smaller;}
+        */
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Header 1</h1>
+        <h1 id ="logo">Logo</h1>
+
+        <ul>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </header>
+    <h1>Header 2</h1>
+    <p id="para1" class ="lead info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, molestiae!
+    </p>
+    <p class ="info">
+        Lorem ipsum <span class="primary">dolor</span> sit amet consectetur, adipisicing elit. Eaque facere aliquam corporis ipsa, ullam dolorum!
+    </p>
+    <p class="info">Lorem ipsum <span>dolor</span>  sit amet consectetur adipisicing elit. Facilis molestias et possimus.</p>
+    <p>Test Paragraph</p>
+    <a href="#">Home</a>
+
+
+</body>
+</html>

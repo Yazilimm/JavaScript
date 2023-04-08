@@ -1,0 +1,20 @@
+.container{
+    padding:20px;
+    color:black;
+    
+}
+.card{
+    background-color:aquamarine !important;
+}
+
+.card-header{
+    background-color: aquamarine;
+}
+
+#todo:hover{
+ background-color:tomato !important;
+ 
+}
+.btn-dark{
+    margin-top:4px !important;
+}

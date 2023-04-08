@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Enes Emre",
+        "department": "IT",
+        "salary":3500
+    },
+
+    {
+        "name": "Kerem",
+        "department": "HR",
+        "salary":4000
+    },
+
+    {
+        "name": "Mehmet Emin",
+        "department": "CEO",
+        "salary":4500
+    }
+]
+   

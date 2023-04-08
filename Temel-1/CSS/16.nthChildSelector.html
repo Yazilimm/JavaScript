@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTH Child Selector</title>
+    <style>
+      /*
+      p:first-child{
+        background-color: brown;
+      }
+      p:last-child{
+        background-color:red;
+      }
+      p{
+        font-size: 1.5em;
+      }
+      p:nth-child(1){
+        color :aquamarine;
+      } 
+      p:nth-child(3){
+          color:brown;
+      } 
+      
+      p:nth-child(even){
+          background-color: blue;
+      }
+      p:nth-child(odd){
+          background-color:red;
+      }
+      */
+      /* an+b forlumu var n=0 b=0*/
+      ul{
+          font-size: 1.5em;
+          list-style-type: none;
+      }
+      ul li:nth-child(2n){
+        color:red;
+      }
+      ul li:nth-child(2n+1){
+        color:blue;
+      }
+      ul li:nth-child(n+4){
+          background-color:black;
+      }
+    </style>
+</head>
+<body>
+     
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, eum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, eum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, eum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, eum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, eum!</p>
+    <ul>
+        <li>element</li>
+        <li>element</li>
+        <li>element</li>
+        <li>element</li>
+        <li>element</li>
+        <li>element</li>
+        <li>element</li>
+    </ul>
+     
+</body>
+</html>
